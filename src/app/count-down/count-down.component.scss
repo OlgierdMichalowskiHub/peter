@@ -1,0 +1,34 @@
+@import '../../styles'; 
+
+.countdown {
+  background-color: black;
+  color: white;
+}
+
+.countdown-logo {
+  width:91px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: 30px;
+}
+
+.countdown-counter {
+  padding-top:16px;
+}
+
+.countdown-daysToGames {
+  font-size: 67px;
+  line-height: 61px;
+  color:#FF0000;
+}
+
+.countdown-text {
+  font-size: $font-size-M;
+  line-height: $line-height-M;
+}
+
+.countdown-action {
+  font-size: $font-size-XL;
+  line-height: $line-height-L;
+  height: 100%;
+}

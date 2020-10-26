@@ -1,0 +1,29 @@
+@import "../../styles";
+
+.contact {
+  background: url("/assets/images/peter_3.png") no-repeat center;
+  background-color: #000000;
+  color: white;
+  height: 580px;
+}
+
+.contact-me {
+  color: #ffb533;
+  font-size: $font-size-XL;
+  line-height: $line-height-XL;
+}
+
+.contact-logo {
+  width: 250px;
+  margin-top: 90px;
+}
+
+.contact-contacts {
+  margin-top: -340px;
+  font-size: $font-size-M;
+  line-height: $line-height-M;
+}
+
+.contact-contacts-names {
+    color: #FFB533;
+}

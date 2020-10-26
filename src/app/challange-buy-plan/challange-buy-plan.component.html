@@ -1,0 +1,88 @@
+<div class="dontArgueChallange">
+  <div class="row mx-0">
+	<div class="col-md-8 dontArgueChallange-left containerPadding-left containerPadding-right">    
+	
+		<div *ngIf="planShown">
+			<div class="dontArgueChalange-challange-title">
+        		1. TRAIN WITH PETER - 119 PLN/msc
+        	</div>
+			<ul>
+			<li>plan treningowy przygotowujący mnie do nadchodzącego sezonu 2021</li>
+			<li>5 dni treningowych / 2 sesje dziennie</li>
+			<li>1 dzień active recovery - cardio(opcjonalnie)</li>
+			</ul>
+
+			<button class="buy-action" (click)="buyPlan(1)">KUP PLAN</button>
+		
+			<div class="dontArgueChalange-challange-title">
+				2. Individual program - 79 PLN/msc
+			</div>
+			<ul>
+			<li>plan dla osób średnio zaawansowanych, które mogą trenować raz dziennie</li>
+			<li>bazuje na planie: Train with Peter, wyklucza bloki zaawansowane i przeznaczone dla osób biorących udział w zawodach</li>
+			</ul>
+
+			<button class="buy-action" (click)="buyPlan(2)">KUP PLAN</button>
+		
+			<div class="dontArgueChalange-challange-title">
+				3. Crossfit classes - zajęcia grupowe - 249 PLN/msc
+			</div>
+			<ul>
+			<li>plan dla początkujących i średnio zaawansowanych przeznaczony na zajęcia grupowe</li>
+			<li>skupiony na tym aby zajęcia mogły być przeprowadzone ze wszystkimi uczestnikami pomimo różnego poziomu zaawansowania</li>
+			<li>4 tygodniowe progresje i bloki pod ćwiczenia gimnastyczne jak i ciężarowe</li>
+			</ul>
+
+			<button class="buy-action" (click)="buyPlan(3)">KUP PLAN</button>
+		
+			<div class="dontArgueChalange-challange-title">
+				4. Individual program - gymnastic - cena po konsultacji
+			</div>
+			<ul>
+			<li>dla osób zainteresowanych planem skupionym na polepszeniu konkretnych skilli 
+				gimnastycznych przewidziane indywidualne programowanie.
+				Swoje pytania proszę kierować przez skrzynkę: donotargue.athlete@gmail.com</li>	
+			</ul>
+		</div>
+
+		<div *ngIf="!planShown">
+			<div class="dontArgueChalange-challange-title">
+				Zatwierdzenie zakupu planu {{ planName }}
+			</div>
+			<ul>
+				<li>plan zostanie przesłany po wypełnieniu poniższego formularza i przelaniu na konto 000000000000 wymaganej kwoty</li>
+			</ul>
+			
+			<form (ngSubmit)="confirmPurchase()" #shopForm="ngForm">
+				<div class="form-group">
+					<label for="firstName">Imie</label>
+					<input type="text" class="form-control" id="firstName"
+						required
+						[(ngModel)]="firstName" name="firstName">
+				</div>
+
+				<div class="form-group">
+					<label for="lastName">Nazwisko</label>
+					<input type="text"  class="form-control" id="lastName"
+						[(ngModel)]="lastName" name="lastName">
+				</div>
+
+				<div class="form-group">
+					<label for="emailAddress">Email</label>
+					<input type="text"  class="form-control" id="emailAddress"
+						[(ngModel)]="emailAddress" name="emailAddress">
+				</div>
+
+				<div class="form-group">
+					<label for="transferNo">Numer referencyjny przelewu</label>
+					<input type="text"  class="form-control" id="transferNo"
+						[(ngModel)]="transferNo" name="transferNo">
+				</div>
+					
+				<button class="buy-action">ZATWIERDŹ ZAKUP</button>
+			</form>
+		</div>
+	</div>
+
+  </div>
+</div>

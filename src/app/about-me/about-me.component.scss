@@ -1,0 +1,75 @@
+@import "../../styles";
+
+.aboutMe {
+  background-color: #ffffff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.aboutMe-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.aboutMe-title {
+  margin-top: 60px;
+  font-size: $font-size-XL;
+  line-height: $line-height-XL;
+  color: #ffb533;
+}
+
+.aboutMe-subTitle {
+  margin-top: 10px;
+  color: #707070;
+  font-size: $font-size-L;
+  line-height: $line-height-M;
+  margin-bottom: 20px;
+}
+
+.aboutMe-content {
+  font-size: $font-size-S;
+  line-height: $line-height-S;
+  font-family: "Open Sans", sans-serif;
+  color: #ffb533;
+}
+
+.aboutMe-awards {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.aboutMe-awards-second {
+  margin-top: 34px;
+}
+
+.awardLight {
+  width: 75px;
+}
+
+.aboutMe-awards-text {
+  font-size: $font-size-XS;
+  line-height: $line-height-XS;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 12px;
+}
+
+.aboutMe-sponsors {
+  font-size: $font-size-M;
+  line-height: $line-height-M;
+  color: white;
+  height: 145px;
+  background-color: #ffb533;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.aboutMe-sponsor {
+  width: 132px;
+}

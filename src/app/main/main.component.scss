@@ -1,0 +1,118 @@
+@import "../../styles";
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.example-is-mobile .mat-drawer-content {
+  overflow: hidden;
+}
+
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+
+.example-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+}
+
+.mat-sidenav {
+  background-color: #ffb533;
+}
+
+.sidenav-container {
+  width: 255px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.example-is-mobile .example-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+       `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+.sideNavLogo {
+  margin-top: 35px;
+  width: 185px;
+}
+
+.sidenav-list {
+  margin-top: 41px;
+  width: 100%;
+  a {
+    display: block;
+    font-size: $font-size-M;
+    padding: 9px;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.sidenav-activeLink {
+  color: black !important;
+}
+
+.sidenav-activeLink::before {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  margin-right: 10px;
+  width: 43px;
+  background-size: 43px 15px;
+  background-image: url("/assets/images/Barbell_left_indicator.svg");
+  background-repeat: no-repeat;
+}
+
+.sidenav-activeLink::after {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 43px;
+  margin-left: 10px;
+  background-size: 43px 15px;
+  background-image: url("/assets/images/Barbell_right_indicator.svg");
+  background-repeat: no-repeat;
+}
+
+.sidenav-button--mobile {
+  margin-left: 255px;
+}
+
+.sidenav-button {
+  position: absolute;
+  position: fixed;
+  z-index: 100;
+}
+
+.sidenav-action {
+  font-size: $font-size-XS;
+  line-height: $line-height-XS;
+  height: 40px;
+  border-color: white;
+  background-color: black;
+  color: white;
+  border-width: 2px;
+  margin-top: 50px;
+  border-style: solid;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Open Sans", sans-serif;
+}

@@ -1,0 +1,54 @@
+@import "../../styles";
+
+img {
+  width: 100%;
+}
+
+.dontArgueChallange-left {
+  background: url("/assets/images/dontargue_background.png") no-repeat center;
+  background-size: 100% 100%;
+  padding-top: 5px;
+}
+
+.dontArgueChallange-title {
+  font-size: $font-size-XL;
+  line-height: $line-height-XL;
+  color: #ffb533;
+}
+
+.dontArgueChallange-tarczynski {
+  color: #707070;
+  font-size: $font-size-M;
+  line-height: $line-height-M;
+}
+
+.dontArgueChalange-challange {
+  //border-color: #ffb533;
+  //border-width: 3px;
+  //border-style: solid;
+  //padding: 30px;
+  margin-top: 45px;
+}
+
+.dontArgueChalange-inner {
+  border-color: #ffb533;
+  border-width: 2px;
+  border-style: solid;
+  margin-left: 1px;
+}
+
+.dontArgueChalange-challange-title {
+  font-size: $font-size-S;
+  line-height: $line-height-S;
+  color: #707070;
+}
+
+.dontArgueChalange-challange-logo {
+  width: 50%;
+}
+
+.dontArgueChalange-challange-join {
+  color: #ffb533;
+  font-size: $font-size-XS;
+  line-height: $line-height-XS;
+}

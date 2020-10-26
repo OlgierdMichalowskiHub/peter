@@ -1,0 +1,106 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav
+      #start
+      #snav
+      [mode]="mobileQuery.matches ? 'over' : 'side'"
+      class="mat-sidenav"
+      [fixedInViewport]="mobileQuery.matches"
+    >
+      <div class="sidenav-container">
+        <img
+          class="sideNavLogo"
+          src="assets/images/logo/RGBPeter_logo_czarne_poziome.svg"
+        />
+        <div class="sidenav-list">
+          <a class="sidenav-itemList--start" routerLink="/" fragment="start"
+            >START</a
+          >
+          <a class="sidenav-itemList--about" routerLink="/" fragment="about"
+            >O MNIE</a
+          >
+          <a
+            class="sidenav-itemList--newsfeed"
+            routerLink="/"
+            fragment="newsfeed"
+            >AKTUALNOŚCI</a
+          >
+          <a
+            class="sidenav-itemList--dontargue"
+            routerLink="/"
+            fragment="dontargue"
+            >DON NOT ARGUE</a
+          >
+          <a class="sidenav-itemList--video" routerLink="/" fragment="video"
+            >WIDEO</a
+          >
+          <a
+            class="sidenav-itemList--challenge"
+            routerLink="/"
+            fragment="challenge"
+            >TRENINGI</a
+          >
+          <a
+            class="sidenav-itemList--challengebuyplan"
+            routerLink="/"
+            fragment="challengebuyplan"
+            >KUP PLAN</a
+          >
+          <a class="sidenav-itemList--contact" routerLink="/" fragment="contact"
+            >KONTAKT</a
+          >
+        </div>
+        <a href="/assets/OfertaSponsorska2020PeterSzczycinski.pdf" download> 
+         <button class="sidenav-action" >
+          OFERTA SPONSORSKA
+         </button> 
+        </a>        
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content [class.example-is-mobile]="mobileQuery.matches">
+      <button
+        *ngIf="mobileQuery.matches"
+        class="sidenav-button"
+        [class.sidenav-button--mobile]="mobileQuery.matches && snav.opened"
+        mat-icon-button
+        (click)="toggle()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="container-fluid p-0">
+        <app-image-action id="start"> </app-image-action>
+
+        <app-count-down> </app-count-down>
+
+        <div id="about">
+          <app-about-me> </app-about-me>
+        </div>
+
+        <div id="newsfeed">
+          <app-news-feed> </app-news-feed>
+        </div>
+
+        <div id="dontargue">
+          <app-dont-argue> </app-dont-argue>
+        </div>
+
+        <div id="video">
+          <app-image-description> </app-image-description>
+        </div>
+
+        <div id="challenge">
+          <app-challange> </app-challange>
+        </div>
+
+        <div id="challengebuyplan">
+          <app-challange-buy-plan> </app-challange-buy-plan>
+        </div>
+
+        <div id="contact">
+          <app-contact></app-contact>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

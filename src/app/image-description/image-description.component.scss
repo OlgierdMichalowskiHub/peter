@@ -1,0 +1,27 @@
+@import "../../styles";
+
+img {
+  width: 100%;
+}
+
+.imageDescription {
+  background-color: #e7f2d8;
+}
+
+.imageDescription-title {
+  color: #707070;
+  font-size: $font-size-XL;
+  line-height: $line-height-XL;
+}
+
+.imageDescription-subTitle {
+  color: #ffb533;
+  font-size: $font-size-M;
+  line-height: $line-height-M;
+  margin-top: 40px;
+}
+
+.imageDescription-content {
+  width: 65%;
+  margin-bottom: 20px;
+}

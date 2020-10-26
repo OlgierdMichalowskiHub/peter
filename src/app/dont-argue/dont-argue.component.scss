@@ -1,0 +1,40 @@
+@import "../../styles";
+
+.dontArgue {
+  background-color: #ffffff;
+}
+
+.dontArgue-left {
+  height: 100%;
+}
+
+.dontArgue-title {
+  color: #ffb533;
+  font-size: $font-size-XL;
+  line-height: $line-height-XL;
+}
+
+.dontArgue-content {
+  font-size: $font-size-S;
+  line-height: $line-height-S;
+  margin-top: 20px;
+}
+
+.dontArgue-action {
+  font-size: $font-size-XS;
+  line-height: $line-height-XS;
+  height: 40px;
+  border-color: #ffb533;
+  background-color: white;
+  color: #ffb533;
+  border-width: 2px;
+  margin-top: 20px;
+  border-style: solid;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+}
